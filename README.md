@@ -6,13 +6,13 @@ A clean, lightweight Python CLI application for placing futures orders on the **
 
 ## Features
 
-- ✅ Place **Market**, **Limit**, and **Stop-Limit** orders
-- ✅ Supports **BUY** and **SELL** sides
-- ✅ Full **input validation** with descriptive error messages
-- ✅ **Rotating log file** with complete request/response trail
-- ✅ Clean **CLI** with multiple sub-commands
-- ✅ Credentials via **environment variables** (no secrets in code)
-- ✅ Structured **three-layer architecture** (client → orders → CLI)
+-  Place **Market**, **Limit**, and **Stop-Limit** orders
+-  Supports **BUY** and **SELL** sides
+-  Full **input validation** with descriptive error messages
+-  **Rotating log file** with complete request/response trail
+-  Clean **CLI** with multiple sub-commands
+-  Credentials via **environment variables** (no secrets in code)
+-  Structured **three-layer architecture** (client → orders → CLI)
 
 ---
 
@@ -90,7 +90,7 @@ set BINANCE_TESTNET_API_SECRET=your_api_secret_here
 python cli.py ping
 ```
 ```
-✅  Binance Futures Testnet is reachable. Server time: 1720616531482 ms
+  Binance Futures Testnet is reachable. Server time: 1720616531482 ms
 ```
 
 ---
@@ -168,10 +168,10 @@ commands:
 
 | Flag | Required | Description |
 |---|---|---|
-| `--symbol` | ✅ | Trading pair, e.g. `BTCUSDT` |
-| `--side` | ✅ | `BUY` or `SELL` |
-| `--type` | ✅ | `MARKET`, `LIMIT`, or `STOP_LIMIT` |
-| `--quantity` | ✅ | Order quantity in base asset |
+| `--symbol` |  | Trading pair, e.g. `BTCUSDT` |
+| `--side` |  | `BUY` or `SELL` |
+| `--type` |  | `MARKET`, `LIMIT`, or `STOP_LIMIT` |
+| `--quantity` |  | Order quantity in base asset |
 | `--price` | For LIMIT / STOP_LIMIT | Limit price |
 | `--stop-price` | For STOP_LIMIT | Trigger price |
 | `--tif` | No (default: `GTC`) | Time-in-force: `GTC`, `IOC`, `FOK` |
@@ -205,7 +205,7 @@ commands:
 │  Created At : 1720616531925 (ms epoch)
 └────────────────────────────────────────────────────
 
-✅  Order placed successfully!
+  Order placed successfully!
 ```
 
 ---
